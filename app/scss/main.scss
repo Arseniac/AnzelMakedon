@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Palatino__bold"; 
+    // адрес шрифта и тип 
+    src: url("../font/palatinolinotype_bold.woff2") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold; 
+}
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Palatino__regular"; 
+    // адрес шрифта и тип 
+    src: url("../font/palatinolinotype_roman.woff2") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+@font-face {
+    // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+    font-family: "Exo__2"; 
+    // адрес шрифта и тип 
+    src: url("../font/Exo2.0-Regular.woff2") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+body{
+    font-size: 18px;
+    font-family: "Palatino__regular";   
+    font-weight: normal; 
+    color: #000000;
+    // background-color: pink;
+
+    
+}
+
+.test{
+    background-color: green;
+}
+
+
+button{
+    padding: 0;
+    cursor: pointer;
+    
+    border: none;
+    color: inherit;
+    background-color: transparent;   
+}
+
+.buy{
+    font-size: 26px;
+    background-color: #B18B8B;
+    color: #FFFFFF;
+    padding: 9px 61px;
+    max-width: 274px;
+    font-family: "Palatino__regular";   
+}
+
+.buttonActive{
+    transition: all .5s;
+    transform: rotate(90deg);
+   
+}
+
+
+

@@ -1,0 +1,120 @@
+.navbar{
+  flex-wrap: wrap;
+
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #404040;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  &__menu{
+    display: flex;
+    &-item{
+      
+      margin: 0 23px;
+      padding: 0 15px;
+      border-bottom: 4px solid #B18B8B;
+      border-radius: 50px;
+      white-space: nowrap;
+      padding-top: 10px;
+      
+
+      
+     
+    }
+  }
+
+  & .phone{
+    padding-top: 10px;
+    cursor: pointer;
+    letter-spacing: 6px;
+  }
+  & .insta{
+    padding-top: 10px;
+    cursor: pointer;
+    position: relative;
+    line-height: 25px;
+
+    margin-left: 30px;
+    &::before{
+      content: "";
+      position: absolute;
+      left: -36px;
+      //bottom: 7px;
+      width: 28px;
+      height: 28px;
+      background-image: url(../img/instahead.svg);
+      
+    }
+  }
+}
+
+.header__logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  background-image: url(../img/background__head.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 90vh;
+  position: relative;
+  padding-top: 90px;
+  margin-bottom: 140px;
+  //padding-bottom: 70px;
+  & img{
+    //user-select: none;
+    //pointer-events: none; 
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    
+  }
+  &::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    
+    height: 5%;
+    // height: 70px;
+    top: 0;
+    background: linear-gradient(to bottom, #fff, #F0E7E5);
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8%;
+    bottom: -8%;
+    background: linear-gradient(to top, #fff, #D6C7C1);
+    
+  }
+}
+
+
+.lk{
+  padding-top: 10px;
+  cursor: pointer;
+  position: relative;
+  line-height: 25px;
+  margin-left: 30px;
+  &__a{
+
+    &::before{
+    
+      content: "";
+      position: absolute;
+      left: -30px;
+      //bottom: 7px;
+      width: 28px;
+      height: 28px;
+      background-image: url(../img/lk.svg);
+      
+      
+    }
+  }
+  
+}

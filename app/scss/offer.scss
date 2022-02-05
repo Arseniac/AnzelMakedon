@@ -1,0 +1,222 @@
+.katalog__slider {
+  position: relative;
+  z-index: 1;
+  padding: 0 215px;
+
+  &-inner{
+    margin: 50px auto;
+    position: relative;
+    //max-width: 80%;
+  }
+}
+.slider-for {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+} 
+// .slide-container {
+//   height: 20vh;
+//   background-color: transparent;
+//   text-align: center;
+//   line-height: 20vh;
+//   font-size: 40px;
+//   font-weight: bold;
+//   border: 0;
+//   margin-bottom: 20px;
+//   box-sizing: border-box;
+  
+// }
+
+.decor {
+  padding: 5px 40px;
+  background-color: #fff;
+  border: 2px solid #000
+}
+
+.katalog{
+  &__item {
+    text-align: center;
+    
+    height: 45vh;//?
+    //background-color: yellow;
+    //border: 1px solid #000;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // padding-bottom: 20px;
+    font-size: 20px;//для текста
+    //min-height: 120px;
+    transition: .5s all;
+    margin: 30px;
+    
+
+    cursor: pointer;
+    transition: all .5s;
+    &:hover{
+      font-size: 26px;
+
+      font-family: "Palatino__bold";
+    }
+  }
+  &__title{
+    
+    //
+    //margin: auto;
+    margin-top: -0.625em;
+    top: 50% ;
+
+    position: absolute;
+    
+  }
+}
+
+.slick-active-first .slide-btn {
+  background-color: red;
+}
+
+.slick-active-last .slide-btn {
+  background-color: orange;
+}
+
+.katalog__slider .slick-arrow{
+  z-index: 5;
+  position: absolute;
+  font-size: 0;
+  width: 156px;
+  height: 118px;
+  top: 50%;
+  &::before{
+      display: none;
+  }
+}
+
+.katalog__slider .slick-arrow.slick-prev{
+  left: 0;
+  
+  background: url('../img/prev.svg') 0 0 no-repeat;
+}
+
+.katalog__slider .slick-arrow.slick-next{
+  right: 0;
+  
+  background: url('../img/next.svg') 0 0 no-repeat;
+}
+
+
+
+.offer{
+  &__selected{
+    text-align: center;
+    margin-bottom: 50px;  
+    & span{
+      color: #B18B8B;
+    }
+  }
+
+  &__item{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+    padding-bottom: 120px;
+    background-color: rgb(229, 229, 229, 0.7);
+    border-radius: 20px;
+  }
+  &__img{
+    border-radius: 10px;
+  }
+  &__descr{
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+
+    &-title{
+      text-transform: uppercase;
+      font-size: 28px;
+      font-family: "Palatino__bold";
+    }
+    &-text{
+      font-size: 18px;
+    }
+    &-price{
+      font-size: 24px;
+    }
+  }
+}
+
+
+.offer__slider .slick-dots {
+  list-style: none;
+  bottom: 60px;
+  & button{
+    
+    width: 29px;
+    height: 30px;
+    
+    background: url(../img/cake.svg)  0 0 no-repeat;
+    //position: absolute;
+    
+
+    
+  }
+  & li{
+    
+    list-style: none;
+    margin: 0 25px;
+    
+  }
+}
+.offer__slider .slick-dots .slick-active{
+  & button{
+    background: url(../img/cake-active.svg)  0 0 no-repeat;
+  }
+}
+
+.offer__slider.slick-dotted.slick-slider{
+  margin-bottom: 0px;
+}
+
+
+
+.offer__slider {
+  position: relative;
+  z-index: 1;
+}
+
+.offer__slider .slick-arrow{
+  z-index: 5;
+  position: absolute;
+  font-size: 0;
+  width: 65px;
+  height: 65px;
+  top: 50%;
+  &::before{
+      display: none;
+  }
+}
+
+.offer__slider .slick-arrow.slick-prev{
+  left: -32.5px;
+  
+  background: url('../img/prev-circle.svg') 0 0 no-repeat;
+  transition: all .5s ease-in-out;
+  &:hover{
+    background: url('../img/circle-hover.svg') 0 0 no-repeat;
+  }
+}
+
+.offer__slider .slick-arrow.slick-next{
+  right: -32.5px;
+  
+  background: url('../img/next-circle.svg') 0 0 no-repeat;
+
+  transition: all .5s ease-in-out;
+  &:hover{
+    background: url('../img/circle-hover.svg') 0 0 no-repeat;
+  }
+}
